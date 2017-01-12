@@ -1,0 +1,2 @@
+96861b1  ajout du fichier gitignore
+171a07f ajout du Readme et de license
