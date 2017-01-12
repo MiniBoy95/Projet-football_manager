@@ -1,0 +1,35 @@
+body {
+	background-color: orange;
+}
+
+#titre {
+	font-weight: bold;
+}
+
+#id{
+	color: red;
+	text-decoration : underline;
+}
+div{
+	padding: solid 10px;
+	border-width: 5px;
+	border-left: 5px;
+	border-top: 5px;
+	border-right: 5px;
+ 	border-style:solid;
+ 	border-color:black;
+ 	padding: 10px;
+}
+#lien{
+	color: white;
+	width:150px;
+	line-height:50px;
+	background: #7C5BAB;
+	border-radius: 10px;
+	padding: 10px 100px;
+
+	text-decoration: none;
+}
+#contenu{
+	font-size: 30px;
+}
