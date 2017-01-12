@@ -1,3 +1,3 @@
 <?php
-	$bdd = new PDO('mysql:host=localhost;dbname=site;charset=utf8','root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=football;charset=utf8','root', '');
 ?>

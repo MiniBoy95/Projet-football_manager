@@ -11,24 +11,22 @@
 
 		include_once('include/database.php');
 
-		$query = $bdd->query("SELECT * FROM article");
+		$query = $bdd->query("SELECT * FROM equipe");
 	
-		$article = $query->fetchAll();
+		$equipe = $query->fetchAll();
 
 
 ?>
-<?php foreach ($article as $article): ?>
+<?php foreach ($equipe as $equipe): ?>
 
 
 	<div>
 
-	<h1 id="id" class="carre">ID : <?= $article['id'] ?></h1>
+	<h1 id="id" class="carre">ID : <?= $a'equ_id'] ?></h1>
 
-	<time id="date">Date : <?= $article['date'] ?></time>
+	<h1 id="nom">Nom de l'equipe : <?= $equipe['equ_nom'] ?></h1>
 
-	<h1 id="nom">Nom de l'article : <?= $article['nom'] ?></h1>
-
-	<p id="contenu">Contenu : <?= $article['contenu'] ?></p>
+	<p id="contenu">Budget : <?= $equipe['equ_budget'] ?></p>
 
 	<a href="edition.php?article_id=<?= $article['id'] ?>" id="lien">Modifier</a>
 
