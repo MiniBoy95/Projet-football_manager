@@ -6,7 +6,7 @@
 </head>
 <body>
 <center><h1>Ajout d'equipe</h1></center>
-<center><form action="#">
+<center><form action="ajout-equip.php" method="post">
 	<label for="text" id="titre">Nom de l'equipe</label>
 	<br>
 	<br>

@@ -5,15 +5,14 @@
 		include_once('include/database.php');
         // On prépare la requette à éxécuter 
 
-			if (isset($_GET['equ_nom'])&& isset($_GET['equ_budget'])){
-    $req = $bdd->prepare('INSERT INTO equipe(equ_nom, equ_budget) VALUES (:equ_nom, :equ_budget)');
+        $pdoStat = $bdd->prepare('INSERT INTO equip VALUE ( :equ_nom, :equ_budget)')
 
-        // On éxécute la requette d'insertion et on y injecte les données qu'on veut ajouter
-    
+        $pdoStat->bindValue(':equ_nom', $_POST['equi_nom'], PDO::PARAM_STR);
 
-    $req->execute(array(
-            'equ_nom' => $_GET['equ_nom'],
-            'equ_budget' => $_GET['equ_budget'],
-            ));
-}
+         $pdoStat->bindValue(':equ_budget', $_POST['equi_budget'], PDO::PARAM_STR);
+
+         //éxécution de la requête préparée
+
+         $pdoStat->execute();
 ?>
+    
